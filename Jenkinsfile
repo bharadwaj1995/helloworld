@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-
+call ()
 def call() {
 node {
    def mvnHome,VERSION
