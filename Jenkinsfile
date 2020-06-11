@@ -21,7 +21,6 @@ pipeline {
                    // Set both label and image
                    label 'docker'
                    image '8-jre-alpine'
-                   args '--name docker-node' // list any args
                  }
                }
                steps {
