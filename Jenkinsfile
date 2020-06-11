@@ -1,5 +1,5 @@
 pipeline {
-    agent { dockerfile true }
+    agent any
     tools {
         maven 'MAVEN_HOME'
         jdk 'JAVA_HOME'
@@ -14,20 +14,6 @@ pipeline {
                 '''
             }
         }
-
-        stage('Docker node test') {
-               agent {
-                 docker {
-                   // Set both label and image
-                   label 'docker'
-                   image '8-jre-alpine'
-                 }
-               }
-               steps {
-                 // Steps run in node:7-alpine docker container on docker slave
-                 sh 'java --version'
-               }
-             }
 
 
         stage ('Build') {
