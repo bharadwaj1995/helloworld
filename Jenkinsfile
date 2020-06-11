@@ -21,8 +21,6 @@ pipeline {
                 sh 'git add .'
                 sh 'git commit -m "sampleproject"'
                 sh 'git push origin HEAD:master'
-                '
-                
             }
         }
     }
