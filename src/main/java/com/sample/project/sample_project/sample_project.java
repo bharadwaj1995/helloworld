@@ -1,9 +1,9 @@
-package com.coveros.demo.helloworld;
+package com.sample.project.sample_project;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class HelloWorld {
+public class sample_project {
 
   public static void main(final String[] args) {
     final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("h:mm:ss a 'on' MMMM d, yyyy'.'");

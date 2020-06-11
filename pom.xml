@@ -2,21 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.coveros.demo</groupId>
-  <artifactId>helloworld</artifactId>
-  <version>1.2-SNAPSHOT</version>
+  <groupId>com.sample.project</groupId>
+  <artifactId>sample_project</artifactId>
+  <version>1</version>
   <packaging>jar</packaging>
 
   <scm>
-      <connection>scm:git:https://github.com/devops-concepts/helloworld.git</connection>
-      <developerConnection>scm:git:https://github.com/devops-concepts/helloworld.git</developerConnection>
+      <connection>scm:git:https://github.com/bharadwaj1995/helloworld.git</connection>
+      <developerConnection>scm:git:https://github.com/bharadwaj1995/helloworld.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   
-  <name>Hello World</name>
-  <description>The most basic of Java programs.</description>
-  <url>https://www.coveros.com/</url>
-  <inceptionYear>2018</inceptionYear>
+  <name>Sample Project</name>
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,20 +48,4 @@
       
     </plugins>
   </build>
-
-
-<distributionManagement>
-    <repository>
-     <id>devops-release</id>
-      <name>devops-release</name>
-      <url>http://localhost:8081/repository/devops-release/</url>
-    </repository>
-    <snapshotRepository>
-      <id>devops-snapshot</id>
-      <name>devops-snapshot</name>
-      <url>http://localhost:8081/repository/devops-snapshot/</url>
-    </snapshotRepository>
-</distributionManagement>
-
-
 </project>
