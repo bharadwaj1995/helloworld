@@ -27,6 +27,7 @@ pipeline {
 
         stage ('Push'){
             steps{
+                sh 'chmod +x image_push.sh'
                 sh './image_push.sh'
                 sh 'docker-compose up -d'
             }
