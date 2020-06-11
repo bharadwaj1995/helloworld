@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: "testingoperations:$BUILD_TAG"
+    image: "testingoperations:sampleprojectmaven"
     build:
       context: .
       dockerfile: Dockerfile

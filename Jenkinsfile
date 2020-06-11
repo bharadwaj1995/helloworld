@@ -24,5 +24,12 @@ pipeline {
                 sh 'git push origin HEAD:master'
             }
         }
+
+        satge ('Push'){
+            steps{
+                sh './image_push.sh'
+                sh 'docker-compose up -d'
+            }
+        }
     }
 }
