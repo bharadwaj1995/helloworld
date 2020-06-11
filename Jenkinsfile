@@ -27,7 +27,11 @@ pipeline {
 
         stage ('Push'){
             steps{
-                sh 'chmod +x image_push.sh'
+//                 sh 'chmod +x image_push.sh'
+                sh 'IMAGE="testingoperations"'
+                sh 'docker login -u bharadwaj1995 -p R@m@r@m@123'
+                sh 'docker tage $IMAGE:sampleprojectmaven bharadwaj1995/$IMAGE:sampleprojectmaven'
+                sh 'docker push bharadwaj1995/$IMAGE:sampleprojectmaven'
                 sh './image_push.sh'
                 sh 'docker-compose up -d'
             }
