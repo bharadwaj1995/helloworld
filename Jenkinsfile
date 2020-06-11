@@ -20,7 +20,8 @@ pipeline {
                 sh 'cp /Users/bharadwajgandrakota/.jenkins/workspace/project_pipeline/target/sample_project-1.jar sample.jar'
                 sh 'git add .'
                 sh 'git commit -m "sampleproject"'
-                sh 'git push'
+                sh 'git push origin HEAD:master'
+                '
                 
             }
         }
