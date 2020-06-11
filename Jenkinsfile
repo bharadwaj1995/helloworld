@@ -27,6 +27,7 @@ pipeline {
 
         stage ('Push'){
             steps{
+                sh 'brew install docker'
                 sh 'chmod +x image_push.sh'
                 sh './image_push.sh'
                 sh 'docker-compose up -d'
