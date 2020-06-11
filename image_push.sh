@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE = "testingoperations"
+IMAGE="testingoperations"
 
 docker login -u bharadwaj1995 -p R@m@r@m@123
 
