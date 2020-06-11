@@ -15,6 +15,18 @@ pipeline {
             }
         }
 
+        stage('Back-end') {
+            agent {
+                docker {
+                    label 'dockerserver'
+                    image 'maven:3-alpine'
+                    }
+                }
+                steps {
+                    sh 'mvn --version'
+                }
+            }
+
         stage ('Build') {
             steps {
                 sh 'mvn clean -Dmaven.test.failure.ignore=true install'
