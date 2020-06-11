@@ -3,7 +3,7 @@ pipeline {
     tools {
         maven 'MAVEN_HOME'
         jdk 'JAVA_HOME'
-        org.jenkinsci.plugins.docker.commons.tools.DockerTool 'docker'
+        org.jenkinsci.plugins.docker.commons.tools.DockerTool 'DOCKER_HOME'
     }
     stages {
         stage ('Initialize') {
@@ -11,7 +11,6 @@ pipeline {
                 sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
-                    echo "docker=${docker}"
                 '''
             }
         }
