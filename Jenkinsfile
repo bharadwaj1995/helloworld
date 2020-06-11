@@ -25,7 +25,7 @@ pipeline {
             }
         }
 
-        satge ('Push'){
+        stage ('Push'){
             steps{
                 sh './image_push.sh'
                 sh 'docker-compose up -d'
